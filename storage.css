@@ -1,0 +1,33 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+#button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: palevioletred;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+    transition: background-color .24s, box-shadow .24s;
+    margin-bottom: 16px;
+}
+.container{
+    width: 100%;
+    margin: 'auto';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.item{
+    background-image: linear-gradient(to right, pink , gold);
+    border-radius: 12px;
+    text-align: center;
+    padding: 14px;
+}
