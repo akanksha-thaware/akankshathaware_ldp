@@ -6,7 +6,8 @@
 #include<string>
 
 using namespace std;
-int main(){
+
+void encrypt(){
     int i;
     string s,result;
     // let key is 4
@@ -17,7 +18,11 @@ int main(){
         char current = s[i];
         result+=(s[i]-'a'+key)%26+'a';
     }
-    cout<<"\n\nencypted message is : "<<result<<'\n';
+    cout<<"\n\nencypted message is : "<<result<<'\n'; 
+}
+
+int main(){
+    encrypt();
     return 0;
 }
 
