@@ -72,10 +72,19 @@ function drop1(ev) {
     };
     itemsandcount1.push(someitem);
   } else {
+    // update the individual cost
     itemsandcount1.forEach((obj) => {
       if (obj.name == itemname) {
         obj.quantity = obj.quantity + 1;
         obj.cost = Number(obj.cost) + Number(itemcost);
+        var rows = currentTable.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; i++) {
+          if(rows[i].getElementsByTagName("td")[1].innerHTML == itemname){
+          rows[i].getElementsByTagName("td")[2].innerHTML = String(obj.cost)
+          rows[i].getElementsByTagName("td")[3].firstChild.value = obj.quantity
+          break;
+          }
+        }
       }
     });
   }
@@ -272,6 +281,14 @@ function drop2(ev) {
       if (obj.name == itemname) {
         obj.quantity = obj.quantity + 1;
         obj.cost = Number(obj.cost) + Number(itemcost);
+        var rows = currentTable.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; i++) {
+          if(rows[i].getElementsByTagName("td")[1].innerHTML == itemname){
+          rows[i].getElementsByTagName("td")[2].innerHTML = String(obj.cost)
+          rows[i].getElementsByTagName("td")[3].firstChild.value = obj.quantity
+          break;
+          }
+        }
       }
     });
   }
@@ -385,6 +402,14 @@ function drop3(ev) {
       if (obj.name == itemname) {
         obj.quantity = obj.quantity + 1;
         obj.cost = Number(obj.cost) + Number(itemcost);
+        var rows = currentTable.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; i++) {
+          if(rows[i].getElementsByTagName("td")[1].innerHTML == itemname){
+          rows[i].getElementsByTagName("td")[2].innerHTML = String(obj.cost)
+          rows[i].getElementsByTagName("td")[3].firstChild.value = obj.quantity
+          break;
+          }
+        }
       }
     });
   }
