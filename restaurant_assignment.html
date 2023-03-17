@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Javascript restro assignment</title>
+  <link rel="stylesheet" href="/restaurant.style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div id="myModal1" class="modal1">
+    <div class="modal-content1">
+      <div class="modal-header1">
+        <span class="close" onclick="close1()">&times;</span>
+        <h4>Table - 1 | Order Details</h4>
+      </div>
+      <div class="modal-body1">
+        <div id="modalitemlist1">
+          <p><span class="tablespan1">S.No</span><span class="tablespan2">Item</span><span
+              class="tablespan3">Price</span></p>
+          <table id="container1" class="container1"></table>
+        </div>
+        <div class="bill">
+        <p>Total:<span id="billfortable1"></span></p>
+       </div>
+        <div class="modal-footer1">
+          <h5 onclick="generateBill('table1')">
+            CLOSE SESSION (GENERATE BILL)
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal2" class="modal2">
+    <div class="modal-content2">
+      <div class="modal-header2">
+        <span class="close" onclick="close2()">&times;</span>
+        <h4>Table - 2 | Order Details</h4>
+      </div>
+      <div class="modal-body2">
+        <div id="modalitemlist2">
+          <p><span class="tablespan1">S.No</span><span class="tablespan2">Item</span><span
+              class="tablespan3">Price</span></p>
+          <table id="container2" class="container2"></table>
+        </div>
+        <div class="bill">
+          <p>Total:<span id="billfortable2"></span></p>
+         </div>
+        <div class="modal-footer2">
+          <h5 onclick="generateBill('table2')">
+            CLOSE SESSION (GENERATE BILL)
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal3" class="modal3">
+    <div class="modal-content3">
+      <div class="modal-header3">
+        <span class="close" onclick="close3()">&times;</span>
+        <h4>Table - 3 | Order Details</h4>
+      </div>
+      <div class="modal-body3">
+        <div id="modalitemlist3">
+          <p><span class="tablespan1">S.No</span><span class="tablespan2">Item</span><span
+              class="tablespan3">Price</span></p>
+          <table id="container3" class="container3"></table>
+        </div>
+        <div class="bill">
+          <p>Total:<span id="billfortable3"></span></p>
+         </div>
+        <div class="modal-footer3">
+          <h5 onclick="generateBill('table3')">
+            CLOSE SESSION (GENERATE BILL)
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="column1">
+      <h4 class="heading">Tables</h4>
+      <input type="text" name="searchtableinput" id="searchtableid" onkeyup="tableSearchFunction()"
+        placeholder="Search table" />
+      <div class="tablecard" onclick="modalClick1()">
+        <div class="table-card-content" ondrop="drop1(event)" ondragover="allowDrop(event)">
+          <h4><b>Table - 1</b></h4>
+          <p>
+            Rs. <span id="table1cost">0</span> | Total items:
+            <span id="table1items">0</span>
+          </p>
+        </div>
+      </div>
+      <div class="tablecard" onclick="modalClick2()">
+        <div class="table-card-content" ondrop="drop2(event)" ondragover="allowDrop(event)">
+          <h4><b>Table - 2</b></h4>
+          <p>Rs. <span id="table2cost">0</span> | Total items: <span id="table2items">0</span> </p>
+        </div>
+      </div>
+      <div class="tablecard" onclick="modalClick3()">
+        <div class="table-card-content" ondrop="drop3(event)" ondragover="allowDrop(event)">
+          <h4><b>Table - 3</b></h4>
+          <p>Rs. <span id="table3cost">0</span> | Total items: <span id="table3items">0<span> </p>
+        </div>
+      </div>
+    </div>
+    <div id="column2">
+      <h4 class="heading">Menu</h4>
+      <input type="text" name="search" id="searchmenuid" onkeyup="menuSearchFunction()"
+        placeholder="Search menu...by course, by food" />
+    </div>
+  </div>
+  <script src="/restaurant.js"></script>
+</body>
+</html>
