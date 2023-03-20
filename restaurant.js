@@ -107,6 +107,7 @@ function appendRow(itemname, itemcost, table) {
   var element3 = document.createElement("input");
   element3.type = "number";
   element3.setAttribute("min", "1")
+  element3.setAttribute("value", 1)
   element3.addEventListener("change", function (event) {
     // update the values of the table1
     let totalitems = document.getElementById("table1items");
@@ -308,6 +309,7 @@ function appendRow2(itemname, itemcost, table) {
   var element3 = document.createElement("input");
   element3.type = "number";
   element3.setAttribute("min", "1")
+  element3.setAttribute("value", 1)
   element3.addEventListener("change", function (event) {
     let totalitems = document.getElementById("table2items");
     let totalcost = document.getElementById("table2cost");
@@ -429,6 +431,7 @@ function appendRow3(itemname, itemcost, table) {
   var element3 = document.createElement("input");
   element3.type = "number";
   element3.setAttribute("min", "1")
+  element3.setAttribute("value", 1)
   element3.addEventListener("change", function (event) {
     let totalitems = document.getElementById("table3items");
     let totalcost = document.getElementById("table3cost");
