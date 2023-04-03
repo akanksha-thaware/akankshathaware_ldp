@@ -1,0 +1,37 @@
+{
+    "item": [
+      {
+        "name": "Greek Yogurt Parfait",
+        "price": 250
+      },
+      {
+        "name": "Mediterranean Wrap",
+        "price": 450
+      },
+      {
+        "name": "Smoked Salmon Bagel",
+        "price": 300
+      },
+      {
+        "name": "Avocado Toast",
+        "price": 350
+      },
+      {
+        "name": "Bagel with Cream Cheese",
+        "price": 200
+      },
+      {
+        "name": "Breakfast Burrito",
+        "price": 500
+      },
+      {
+        "name": "Eggs Benedict",
+        "price": 350
+      },
+      {
+        "name": "Smashed Chickpea Salad",
+        "price": 400
+      }
+    ]
+  }
+  
