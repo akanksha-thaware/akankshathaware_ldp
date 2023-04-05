@@ -1,0 +1,3 @@
+[submodule "parent-child"]
+	path = parent-child
+	url = git@github.com:akanksha-thaware/parent-child.git
